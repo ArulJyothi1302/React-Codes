@@ -44,6 +44,7 @@ import PostForm from './components/Day18Post';
 import PostFormData from './components/tasks/PostPac';
 import PostDataFromForm from './components/tasks/PostCopy';
 import UseState from './components/Day19HooksUseState';
+import UseStateHook from './components/tasks/HooksUseState';
 function App() {
   return (
     <div className="App">
@@ -102,7 +103,8 @@ function App() {
 {/* <PostForm/> */}
 {/* <PostFormData/> */}
 {/* <PostDataFromForm/> */}
-<UseState/>
+{/* <UseState/> */}
+<UseStateHook/>
     </div>
   );
 }
