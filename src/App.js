@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Welcome from './components/Welcome-Func-Class'
 import Hello from './components/Hello'
@@ -45,10 +46,40 @@ import PostFormData from './components/tasks/PostPac';
 import PostDataFromForm from './components/tasks/PostCopy';
 import UseState from './components/Day19HooksUseState';
 import UseStateHook from './components/tasks/HooksUseState';
+import CompA from './components/Context/CompA';
+import Comp1 from './components/Context/Comp1';
+import ClumsyCont1 from './components/Context/ClumsyCont1';
+
+export const UserContext=React.createContext();
+
+export const ClumsyContext= React.createContext();
+
+export const  ChannelContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
-   
+   {/* <UserContext.Provider value="Arul">
+<Comp1/> 
+
+</UserContext.Provider> */}
+{/* Normal Context without creating Context */}
+{/* <ClumsyCont1/> */}
+
+{/* creating context api here */}
+{/* <ClumsyContext.Provider value="Arul">
+
+<ClumsyCont1/>
+</ClumsyContext.Provider> */}
+
+{/* Multiple context */}
+{/* <ClumsyContext.Provider value="Arul">
+  <ChannelContext.Provider value="Cricket">
+  <ClumsyCont1/>
+
+  </ChannelContext.Provider>
+ 
+</ClumsyContext.Provider> */}
      {/* <h1>React</h1>
   <Welcome name="Arul" off="50%"/>
   <Welcome name="Ganesh" off="50%"/>
@@ -104,7 +135,8 @@ function App() {
 {/* <PostFormData/> */}
 {/* <PostDataFromForm/> */}
 {/* <UseState/> */}
-<UseStateHook/>
+{/* <UseStateHook/> */}
+
     </div>
   );
 }
