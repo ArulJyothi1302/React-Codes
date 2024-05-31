@@ -49,6 +49,9 @@ import UseStateHook from './components/tasks/HooksUseState';
 import CompA from './components/Context/CompA';
 import Comp1 from './components/Context/Comp1';
 import ClumsyCont1 from './components/Context/ClumsyCont1';
+import CustList from './components/CustList';
+import CustAdd from './components/CustomerAdd';
+import StudList from './components/tasks/CustomerDet';
 
 export const UserContext=React.createContext();
 
@@ -136,7 +139,9 @@ function App() {
 {/* <PostDataFromForm/> */}
 {/* <UseState/> */}
 {/* <UseStateHook/> */}
-
+{/* <CustList/> */}
+{/* <CustAdd/> */}
+<StudList/>
     </div>
   );
 }
