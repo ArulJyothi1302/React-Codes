@@ -1,0 +1,25 @@
+img{
+    width:100px;
+    height:100px;
+}
+.cart{
+    display:flex;
+    flex-wrap: wrap;
+    flex:2;
+    justify-content: space-evenly;
+    margin-top:50px;
+    gap:50px;
+    
+    
+}
+.cart .price{
+    margin-top: 10px;
+    text-align: center;
+}
+.Product{
+    background-color: #cdcad1;
+    padding:10px
+}
+.cart-item{
+    margin-top:20px;
+}
