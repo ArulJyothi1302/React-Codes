@@ -52,6 +52,10 @@ import ClumsyCont1 from './components/Context/ClumsyCont1';
 import CustList from './components/CustList';
 import CustAdd from './components/CustomerAdd';
 import StudList from './components/tasks/CustomerDet';
+import WithoutUseEffect from './components/UseEffect/WithoutUseEffect';
+import WithUseEffect from './components/UseEffect/WithUseEffect';
+import ParentCallback from './components/UseCallback/ParentCallback';
+import ParCb from './components/tasks/ParentCompCb';
 
 export const UserContext=React.createContext();
 
@@ -139,9 +143,13 @@ function App() {
 {/* <PostDataFromForm/> */}
 {/* <UseState/> */}
 {/* <UseStateHook/> */}
+{/* <WithoutUseEffect/> */}
+{/* <WithUseEffect/> */}
 {/* <CustList/> */}
 {/* <CustAdd/> */}
-<StudList/>
+{/* <StudList/> */}
+{/* <ParentCallback/> */}
+<ParCb/>
     </div>
   );
 }
